@@ -1,0 +1,19 @@
+@include media-query($on-laptop) {
+    .post-title{
+        @include relative-font-size(1.55);
+    }
+    .post-content {
+        h2 {
+            @include relative-font-size(1.25);
+        }
+    
+        h3 {
+            @include relative-font-size(1);
+        }
+    
+        h4 {
+            @include relative-font-size(.9);
+        }
+    }
+
+}

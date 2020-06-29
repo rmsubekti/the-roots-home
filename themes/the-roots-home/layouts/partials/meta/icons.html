@@ -1,0 +1,38 @@
+<!-- See https://goo.gl/qRE0vM -->
+<meta name="theme-color" content="#a2466c">
+<!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="{{ .Site.Title }}"/>
+<!-- Default icons -->
+<link rel="icon" href="{{ .Site.BaseURL }}{{ "favicon.ico" }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+<link rel="icon" type="image/png" href="{{ "icons/32.png" | relURL }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ "icons/192.png" | relURL }}" sizes="192x192">
+<link rel="icon" type="image/png" href="{{ "icons/96.png" | relURL }}" sizes="96x96">
+<link rel="icon" type="image/png" href="{{ "icons/16.png" | relURL }}" sizes="16x16">
+<link rel="mask-icon" href="{{ "icons/icon.svg" | relURL }}" color="#5bbad5">
+<!-- Homescreen icons -->
+<link rel="apple-touch-icon" href="{{ "icons/48.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="57x57" href="{{ "icons/57.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ "icons/60.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ "icons/72.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ "icons/76.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="96x96" href="{{ "icons/96.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ "icons/120.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ "icons/144.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ "icons/152.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "icons/180.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="192x192" href="{{ "icons/192.png" | relURL }}">
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+<!-- specifying a startup image -->
+<link rel="apple-touch-startup-image" href="{{ "icons/144.png" | relURL }}">
+<!-- enables or disables automatic detection of possible phone numbers -->
+<meta name="format-detection" content="telephone=no">
+<!-- Tile icon for Windows 8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="{{ "icons/144.png" | relURL }}">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="msapplication-navbutton-color" content="#fff">

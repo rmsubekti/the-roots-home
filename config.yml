@@ -1,0 +1,42 @@
+baseURL: https://rmsubekti.github.io/the-roots-home/
+languageCode: id-ID
+title: Root's Home
+params:
+  Description: I'm root, I am root, i am root. 😁 i am root.
+disqusShortname: 
+theme: the-roots-home
+
+enableGitInfo: true
+enableEmoji: true
+enableRobotsTXT: true
+
+# Syntax Highlight Options
+pygmentsCodeFencesGuessSyntax: true
+pygmentsCodeFences : true
+pygmentsUseClasses: true
+pygmentsStyle: vs
+pygmentsOptions:
+  linenos: true
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+mediaTypes:
+  "application/manifest+json":
+    suffixes: ["webmanifest"]
+
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+
+outputs:
+  page: 
+    - HTML
+  home:
+    - HTML
+    - RSS
+    - WebAppManifest

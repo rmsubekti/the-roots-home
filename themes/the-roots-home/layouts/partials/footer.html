@@ -1,0 +1,11 @@
+{{ $app := resources.Get "app.js" | resources.ExecuteAsTemplate "app.js" . | minify }}
+<footer class="site-footer">
+	<span class="left">Gohugo/{{ hugo.Version }}</span> 
+	<span class="right">
+		<em>The Root's Home</em> By 
+		<a href="https://github.com/rmsubekti" target="_blank" rel="noopener noreferrer">rmsubekti</a>
+	</span>
+</footer>
+{{ if ne hugo.Environment "development"}}
+<script type="text/javascript" src="{{ $app.Permalink }}" integrity="{{ $app.Data.Integrity }}"></script>
+{{ end }}

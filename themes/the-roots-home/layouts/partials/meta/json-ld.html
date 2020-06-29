@@ -1,0 +1,117 @@
+{{- define "breadcrumbld" -}}
+{{- if .p01.Parent -}}
+  {{- template "breadcrumbld" (dict "p01" .p01.Parent "p02" .p02 ) -}}
+{{- else if not .p01.IsHome -}}
+  {{- template "breadcrumbld" (dict "p01" .p01.Site.Home "p02" .p02 ) -}}
+{{- end -}}
+{
+  "@type": "ListItem",
+  "position": {{- if .p01.IsPage -}}{{- add .p01.Parent.Weight 1 -}} {{- else -}} {{- .p01.Weight -}} {{- end -}},
+  "item": {
+  "@type": "{{if .p01.IsHome}}WebSite{{else}}WebPage{{end}}",
+  "@id": "{{ .p01.Permalink | absURL }}",
+  {{ if .p01.Params.featuredImage }}"image": "{{ . }}", {{ end }}
+  "name": "{{.p01.Title}}"
+  }
+}{{- if not (eq .p01 .p02 ) -}},{{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {{- template "breadcrumbld" (dict "p01" . "p02" .) -}}
+    ]
+  },
+
+    {{ if .IsHome }}
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ .Site.Title }},
+      "url": {{ .Site.BaseURL }},
+      "sameAs": [
+        "https://www.facebook.com/{{ .Site.Params.facebook }}",
+        "https://www.instagram.com/{{ .Site.Params.instagram }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}",
+        "https://github.com/{{ .Site.Params.github }}"
+      ]
+    }
+
+    {{ else }}
+    {
+      "@context": "https://schema.org",
+      "@type": "{{ if .IsPage }}BlogPosting{{ else }}WebPage{{ end }}",
+      "headline": {{ .Title }},
+      "description": "{{ (.Params.Description | default (.Summary | truncate 200)) | safeHTML }}",
+      {{if or .Date .PublishDate }}"datePublished": {{ (.PublishDate.Format "2006-01-02T15:04:05-07:00" | default (.Date.Format "2006-01-02T15:04:05-07:00")) | safeHTML }},{{ end }}
+      {{ with .Lastmod }}"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }},{{ end }}
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink | absURL }}"
+      },
+      {{ with .Params.tags -}}"keywords": "{{ delimit . ", " }}",{{- end }}
+      {{ with .WordCount }}"wordcount": {{ . }},{{ end }}
+      "url": "{{ .Permalink | absURL }}",
+      {{ with .Params.featuredImage }}
+      "image": {
+        "@type": "imageObject",
+        "url": "{{ . | absURL }}",
+        "height": "{{ .height | default 600}}",
+        "width": "{{ .width | default 800}}",
+      },
+      {{ end }}
+      {{ with .Site }}
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ .Title }}",
+          "logo": {
+          "@type": "imageObject",
+          "url": "{{ .Params.logo }}"
+          }
+        },
+      {{ end }}
+
+      {{ if .IsPage }}
+      "author": {
+        "@type": "Person",
+        "name": "{{ if .GitInfo }} {{.GitInfo.AuthorName}} {{else}} {{(.Params.Author | default .Site.Title ) }}{{end}}"
+      },
+      {{ $posts := where (where .Site.RegularPages "Section" .Section ) ".Permalink" "!=" .Permalink }}
+      {{ if gt (len $posts) 1 }} 
+      "sharedContent": [
+        {{ range $i, $item:=(shuffle $posts | first 3) }}
+          {
+            "@type":"WebPage",
+            "headline": "{{ .Title }}",
+            "url": "{{ .Permalink | absURL }}",
+            "author":{
+            "@type":"Person",
+            "name": "{{ if .GitInfo }} {{.GitInfo.AuthorName}} {{else}} {{(.Params.Author | default .Site.Title ) }}{{end}}"
+            }
+          }{{ if not (eq (add $i 1) 3)}},{{ end }}
+        {{ end }}
+      ],
+      {{ end }}
+      "articleBody": "{{ .Summary | safeHTML}}"
+
+      {{ else }}
+      "sharedContent": [
+        {{ range $i, $item:=(first 20 (where .Site.RegularPages "Section" .Section)) }}
+          {
+            "@type":"WebPage",
+            "headline": "{{ .Title }}",
+            "url": "{{ .Permalink | absURL }}",
+            "author":{
+            "@type":"Person",
+            "name": "{{ if .GitInfo }} {{.GitInfo.AuthorName}} {{else}} {{(.Params.Author | default .Site.Title ) }}{{end}}"
+            }
+          }{{ if not (eq (add $i 1) 20)}},{{ end }}
+        {{ end }}
+      ]
+      {{ end }}
+    }
+
+    {{ end }}
+    </script>
