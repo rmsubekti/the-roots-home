@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Root&#39;s Home</title>
+    <link>https://rmsubekti.github.io/the-roots-home/blog/</link>
+    <description>Recent content in Blog on Root&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-ID</language>
+    
+	<atom:link href="https://rmsubekti.github.io/the-roots-home/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Am RooT!</title>
+      <link>https://rmsubekti.github.io/the-roots-home/blog/i-am-root/</link>
+      <pubDate>Mon, 29 Jun 2020 15:41:45 +0700</pubDate>
+      
+      <guid>https://rmsubekti.github.io/the-roots-home/blog/i-am-root/</guid>
+      <description>i am root
+ i am root i am root  i am root ~: echo &amp;#34;i am root&amp;#34; i am root ~: I Am Root i am root
+i am root  i am root i am root</description>
+    </item>
+    
+  </channel>
+</rss>
