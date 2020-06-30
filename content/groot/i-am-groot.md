@@ -5,20 +5,20 @@ categories: Groot
 ---
 i am groot?
 
-![i am groot](/groot/un8hm.jpg)
+![i am groot](/the-roots-home/groot/un8hm.jpg)
 
 i am groot [@https://imgflip.com/i/un8hm](https://imgflip.com/i/un8hm)
 
 I Am gROOT!!
 ---
     i am groot
-    ![i am groot](/groot/tenor.gif)
+    ![i am groot](/the-roots-home/groot/tenor.gif)
     i am groot
 
 i am groot:
 
 i am groot
-![i am groot](/groot/tenor.gif)
+![i am groot](/the-roots-home/groot/tenor.gif)
 i am groot
 
 
@@ -28,7 +28,7 @@ i am groot [@https://tenor.com/view/real-groot-baby-groot-gif-7317011](https://t
 
     i am groot
 
-    ![i am groot](/groot/tenor.gif)
+    ![i am groot](/the-roots-home/groot/tenor.gif)
 
     i am groot
 
@@ -36,7 +36,7 @@ i am groot:
 
 i am groot
 
-![i am groot](/groot/tenor2.gif)
+![i am groot](/the-roots-home/groot/tenor2.gif)
 
 i am groot
 

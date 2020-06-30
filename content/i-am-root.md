@@ -12,4 +12,4 @@ i am root,
 i am root
 
 
-i Am Root, [am i root?](/tags/)
+i Am Root, [am i root?](/the-roots-home/tags/)
