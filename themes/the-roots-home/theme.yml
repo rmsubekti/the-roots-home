@@ -6,8 +6,8 @@ license : "MIT"
 licenselink : "https://rmsubekti.mit-license.org/2020/license.txt"
 description : "i Am ROOT!"
 homepage : "https://github.com/rmsubekti/the-roots-home/"
-tags : [light,simple, root]
-features : [i, am, root]
+tags : ["light","simple", "root"]
+features : [i, "am", "root"]
 min_version : "0.73.0"
 
 author:
