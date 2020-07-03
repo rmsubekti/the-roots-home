@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Root&#39;s Home</title>
+    <link>https://rmsubekti.github.io/the-roots-home/basic-example-thingy/</link>
+    <description>Recent content on Root&#39;s Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-ID</language>
+    
+	<atom:link href="https://rmsubekti.github.io/the-roots-home/basic-example-thingy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://rmsubekti.github.io/the-roots-home/basic-example-thingy/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rmsubekti.github.io/the-roots-home/basic-example-thingy/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rmsubekti.github.io/the-roots-home/basic-example-thingy/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rmsubekti.github.io/the-roots-home/basic-example-thingy/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
