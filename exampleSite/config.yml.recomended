@@ -2,7 +2,7 @@ baseURL: https://rmsubekti.github.io/the-roots-home/
 languageCode: id-ID
 title: Root's Home
 params:
-  Description: I'm root, I am root, i am root. 😁 i am root.
+  description: I'm root, I am root, i am root. 😁 i am root.
 disqusShortname: 
 theme: the-roots-home
 

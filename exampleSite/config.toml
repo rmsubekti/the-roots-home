@@ -1,12 +1,15 @@
-baseURL= "https://example.com/"
-languageCode= "id-ID"
-title= "Root's Home"
-[params]
-  Description= "I'm root, I am root, i am root. 😁 i am root."
-# disqusShortname=
-theme= "the-roots-home"
+baseURL = "https://example.com"
+title = "The Root's Home"
+author = "root"
+copyright = "Copyright © 2020, Root; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+  
+theme="the-roots-home"
 
-enableGitInfo= true
+enableGitInfo=true
 enableEmoji= true
 enableRobotsTXT= true
 
