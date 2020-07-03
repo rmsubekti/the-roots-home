@@ -144,13 +144,11 @@
     }
   
     h2 {
-      border-bottom: 1px dotted $grey-color-light;
       @include relative-font-size(1.1);
       font-weight: bold;
     }
   
     h3 {
-      border-bottom: 1px dotted $grey-color-light;
       font-weight: bold;
       @include relative-font-size(1.075);
     }
@@ -163,4 +161,14 @@
   article~.pagination{
     padding: $spacing-unit 0;
     border-top: 1px dashed $grey-color-light;
+  }
+
+  .__h_instagram.card {
+    font-size: 14px;
+    border: 1px solid #bfbaba;
+    padding: 10px 0;
+    background: #fff;
+    .card-link{
+      padding-left: 16px;
+    }
   }

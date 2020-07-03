@@ -28,7 +28,10 @@
    max-width: $content-width;
  }
  
- 
+ hr{
+   border: 1px dashed #828282;
+   margin: 25px 0;
+ }
  
  /**
   * Set `margin-bottom` to maintain vertical rhythm
@@ -132,6 +135,7 @@
   * Blockquotes
   */
  blockquote {
+   font-family: serif;
    color: $grey-color;
    border-left: 4px solid $grey-color-light;
    padding-left: $spacing-unit / 2;
@@ -154,7 +158,6 @@
    @include relative-font-size(0.9375);
    border: 1px solid #d4d4d4;
    border-radius: 2px;
-   background-color: #eee4d0;
  }
  
  code {
@@ -198,7 +201,10 @@
  /**
   * Icons
   */
- 
+  .emoji {
+    font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+  }
+
  .svg-icon {
      width: 16px;
      height: 16px;
@@ -223,7 +229,7 @@
    margin-bottom: $spacing-unit;
    width: 100%;
    text-align: $table-text-align;
-   color: lighten($text-color, 18%);
+   color: darken($text-color, 9%);
    border-collapse: collapse;
    border: 1px solid $grey-color-light;
    tr {
