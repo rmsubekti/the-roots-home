@@ -1,10 +1,10 @@
-baseURL= https://example.com/
-languageCode= id-ID
-title= Root's Home
+baseURL= "https://example.com/"
+languageCode= "id-ID"
+title= "Root's Home"
 [params]
   Description= "I'm root, I am root, i am root. 😁 i am root."
-disqusShortname=
-theme= the-roots-home
+# disqusShortname=
+theme= "the-roots-home"
 
 enableGitInfo= true
 enableEmoji= true
@@ -14,9 +14,9 @@ enableRobotsTXT= true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-pygmentsStyle = vs
+pygmentsStyle = "vs"
 [pygmentsOptions]
   linenos= true
 
 [markup]
-  defaultMarkdownHandler= goldmark
+  defaultMarkdownHandler= "goldmark"

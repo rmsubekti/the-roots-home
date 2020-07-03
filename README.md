@@ -2,7 +2,7 @@ The Root's Home
 ---
 Well, I am not root.
 
-![screenshot](https://github.com/rmsubekti/the-roots-home/raw/master/images/screenshot.png)
+![screenshot](https://github.com/rmsubekti/the-roots-home/raw/master/images/tn.png)
 
 
 Demo is right here [Root's Home](https://rmsubekti.github.io/the-roots-home/)
