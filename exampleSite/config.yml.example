@@ -20,6 +20,3 @@ pygmentsOptions:
 
 markup:
   defaultMarkdownHandler: goldmark
-  goldmark:
-    renderer:
-      unsafe: true
