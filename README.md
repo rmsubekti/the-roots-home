@@ -7,13 +7,31 @@ Well, I am not root.
 
 Demo is right here [Root's Home](https://rmsubekti.github.io/the-roots-home/)
 
-Requirements
+Instalation
 ---
-Need the extended version of Hugo to properly render the pages.
-[look how to intall hugo extended version](https://gohugo.io/getting-started/installing/)
+
+Hugo Extended Version 
+
+```
+# at the root folder of your site
+git clone https://github.com/rmsubekti/the-roots-home.git themes/the-roots-home
+```
+
+Hugo Basic Version
+
+```
+# at the root folder of your site
+git clone https://github.com/rmsubekti/the-roots-home.git themes/the-roots-home
+cp -r the-roots-home/exampleSite/resources .  #don't forget the dot 😄
+```
+
+Well, There is never enough `root`s to say
+
 
 Built With GoHugo.io
 
 Icons By Ionicons.com
+
+
 
 [License](https://raw.githubusercontent.com/rmsubekti/the-roots-home/master/LICENSE)
