@@ -22,7 +22,7 @@ Hugo Basic Version
 ```
 # at the root folder of your site
 git clone https://github.com/rmsubekti/the-roots-home.git themes/the-roots-home
-cp -r the-roots-home/exampleSite/resources .  #don't forget the dot 😄
+cp -r themes/the-roots-home/exampleSite/resources .  #don't forget the dot 😄
 ```
 
 Well, There is never enough `root`s to say
