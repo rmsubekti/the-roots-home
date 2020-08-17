@@ -24,21 +24,21 @@
                 {{end}}
             </a>
         </h3>
-        <span>{{with .GitInfo }} <em>@{{.AbbreviatedHash}}</em> {{.Subject }} {{ end }}</span>
-        <time datetime="2006-01-02">{{ .Date.Format "2 Jan 2006" | }}</time>
+        {{with .GitInfo }}<span><em>@{{.AbbreviatedHash}}</em> {{.Subject }}</span>{{ end }}
+        <time datetime="2006-01-02">{{ .Date.Format "2 Jan 2006" }}</time>
     </div>
     {{ end }}         
     {{ with .Paginator}}
     <div class="pagination">
-        <div class="next">
-            {{ if .HasNext }}
-            <a href="{{.Next.URL}}">Oldest</a>
-            {{ end }}
-        </div>
         <div class="prev">
             {{ if .HasPrev }}
             <a href="{{.Prev.URL}}">Newest</a>
         {{ end }}
+        </div>
+        <div class="next">
+            {{ if .HasNext }}
+            <a href="{{.Next.URL}}">Oldest</a>
+            {{ end }}
         </div>
     </div>
     {{ end }}

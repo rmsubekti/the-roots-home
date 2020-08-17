@@ -20,16 +20,12 @@
     </div>
 </article>
 <div class="pagination">
-    <div class="prev">
-        {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}">Previous Post</a>
-        {{ end }}
-    </div>
-    <div class="next">
-        {{ if .NextInSection }}
-        <a href="{{.NextInSection.Permalink}}">Next Post</a>
-        {{ end }}
-    </div>
+    {{ if .PrevInSection }}
+    <div class="prev"> <a href="{{.PrevInSection.Permalink}}">Previous Post</a> </div>
+    {{ end }}
+    {{ if .NextInSection }}
+    <div class="next"> <a href="{{.NextInSection.Permalink}}">Next Post</a> </div>
+    {{ end }}
 </div>
 {{ template "_internal/disqus.html" . }}
 {{ end }}

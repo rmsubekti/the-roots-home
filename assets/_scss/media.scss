@@ -29,3 +29,10 @@
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+    body  { 
+        color: rgb(199, 195, 187);
+        background-color: #231f14;
+    }
+  }
