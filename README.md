@@ -7,7 +7,7 @@ Well, I am not root.
 
 Demo is right here [Root's Home](https://rmsubekti.github.io/the-roots-home/)
 
-Instalation
+Installation
 ---
 
 Hugo Extended Version 
